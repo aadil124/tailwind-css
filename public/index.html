@@ -7,56 +7,80 @@
     <link rel="stylesheet" href="style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
-    <div>
-      <div>
+  <body class="text-gray-600">
+    <div class="grid md:grid-cols-3">
+      <div class="md:col-span-1">
         <nav>
           <div>
             <div class="flex items">
               <div class="bg-amber-700 h-4 w-6"></div>
               <div class="bg-orange-600 h-8 w-6"></div>
               <div class="bg-red-500 h-10 w-6"></div>
-              <h1
-                class="text-amber-700 text-6xl font-semibold p-4 border-b border-amber-700 uppercase"
-              >
-                Games Hub
-              </h1>
             </div>
+            <h1
+              class="text-amber-700 text-6xl font-semibold p-4 border-b border-amber-700 uppercase md:border-red-400 sm:border-amber-300"
+            >
+              Games Hub
+            </h1>
 
             <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">contact</a></li>
-              <li><a href="#">Play Zone</a></li>
+              <li><a href="#" class="hover:text-amber-400">Home</a></li>
+              <li><a href="#" class="hover:text-amber-400">About Us</a></li>
+              <li><a href="#" class="hover:text-amber-400">contact</a></li>
+              <li><a href="#" class="hover:text-amber-400">Play Zone</a></li>
             </ul>
           </div>
         </nav>
       </div>
 
-      <main>
-        <div class="flex justify-end">
-          <a href="#" class="text-amber-700">Login</a>
-          <a href="#" class="text-amber-700 ml-3">Sign Up</a>
+      <main class="bg-amber-100 md:col-span-2">
+        <div class="flex md:justify-end justify-start p-3">
+          <a
+            href="#"
+            class="text-amber-700 rounded uppercase font-bold text-xs p-3 cursor-pointer border-2 border-amber-800 rounded-full hover:text-white hover:bg-amber-700"
+            >Login</a
+          >
+          <a
+            href="#"
+            class="text-amber-700 ml-3 rounded uppercase font-bold text-xs p-3 cursor-pointer border-2 border-amber-800 rounded-full  hover:text-white hover:bg-amber-700"
+            >Sign Up</a
+          >
         </div>
 
         <header>
-          <h2>Game Type</h2>
+          <h2 class="text-7xl font-semibold text-amber-500">Game Type</h2>
           <h3>Quick Plays</h3>
         </header>
 
-        <div>
+        <div class="bg-amber-100">
           <h4
             class="text-2xl border-b border-amber-400 text-amber-500 px-6 py-4 font-bold"
           >
             Trending Games
           </h4>
-          <div class="px-6">
-            <div class="py-8">
-              <img src="assets/image/game-3.jpg" alt="Chess" />
-            </div>
-            <div>
-              <span>Chess Games Hubilti</span>
-              <span>Build by Riot Gaming</span>
+          <div class="mt-8 px-8">
+            <div class="card hover:shadow-xl">
+              <div class="bg-white rounded overflow-hidden shadow-md relative">
+                <div>
+                  <img
+                    class="w-full sm:h-80"
+                    src="assets/image/game-3.jpg"
+                    alt="Chess"
+                  />
+                </div>
+                <div class="p-2">
+                  <span class="font-bold">Chess Games Hubilti</span>
+                  <span class="block text-light italic"
+                    >Build by Riot Gaming</span
+                  >
+                </div>
+                <div
+                  class="text-white-100 bg-amber-300 font-bold rounded-full absolute top-1 ml-2 p-2"
+                >
+                  <span class="text-bold">Price: </span>
+                  <span> $79 </span>
+                </div>
+              </div>
             </div>
           </div>
           <h4
@@ -64,14 +88,83 @@
           >
             Upcoming Games
           </h4>
-          <div class="px-6">
-            <div class="py-8">
-              <img src="assets/image/game-3.jpg" alt="Chess" />
+          <div class="mt-8 px-8 grid lg:grid-cols-3 gap-5">
+            <div class="card hover:shadow-xl">
+              <div
+                class="bg-white rounded overflow-hidden shadow-md relative mt-4"
+              >
+                <div>
+                  <img
+                    class="w-full sm:h-80"
+                    src="assets/image/game-3.jpg"
+                    alt="Chess"
+                  />
+                </div>
+                <div class="p-2">
+                  <span class="font-bold">Card Games Hubilti</span>
+                  <span class="block text-light italic"
+                    >Build by Alpha Gaming</span
+                  >
+                </div>
+                <div
+                  class="text-white-100 bg-amber-300 font-bold rounded-full absolute top-1 ml-2 p-2"
+                >
+                  <span class="text-bold">Price: </span>
+                  <span> $49 </span>
+                </div>
+              </div>
             </div>
-            <div>
-              <span>Card Games Hubilti</span>
-              <span>Build by Alpha Gaming</span>
+            <div class="card hover:shadow-xl">
+              <div
+                class="bg-white rounded overflow-hidden shadow-md relative mt-4"
+              >
+                <div>
+                  <img
+                    class="w-full sm:h-80"
+                    src="assets/image/game-3.jpg"
+                    alt="Chess"
+                  />
+                </div>
+                <div class="p-2">
+                  <span class="font-bold">Card Games Hubilti</span>
+                  <span class="block text-light italic"
+                    >Build by Alpha Gaming</span
+                  >
+                </div>
+                <div
+                  class="text-white-100 bg-amber-300 font-bold rounded-full absolute top-1 ml-2 p-2"
+                >
+                  <span class="text-bold">Price: </span>
+                  <span> $49 </span>
+                </div>
+              </div>
             </div>
+            <div class="card hover:shadow-xl">
+              <div
+                class="bg-white rounded overflow-hidden shadow-md relative mt-4"
+              >
+                <div>
+                  <img
+                    class="w-full sm:h-80"
+                    src="assets/image/game-3.jpg"
+                    alt="Chess"
+                  />
+                </div>
+                <div class="p-2">
+                  <span class="font-bold">Card Games Hubilti</span>
+                  <span class="block text-light italic"
+                    >Build by Alpha Gaming</span
+                  >
+                </div>
+                <div
+                  class="text-white-100 bg-amber-300 font-bold rounded-full absolute top-1 ml-2 p-2"
+                >
+                  <span class="text-bold">Price: </span>
+                  <span> $49 </span>
+                </div>
+              </div>
+            </div>
+
             <div>
               <div>Load More Games...</div>
             </div>
